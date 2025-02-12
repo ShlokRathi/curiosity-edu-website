@@ -1,118 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Letter from Curiosity Education</title>
-    <style>
-        body {
-            font-family: "Raleway", serif;
-            background-color: #fff;
-            color: #333;
-            max-width: 700px;
-            margin: 60px auto;
-            padding: 40px;
-            line-height: 1.6;
-        }
-        h1 {
-            display: none; /* Removed the separate title text */
-        }
-        .letter {
-            text-align: left;
-            font-size: 18px;
-        }
-        .manifesto-section {
-            margin-top: 30px;
-            padding: 20px;
-            border-left: 4px solid #b30000;
-            background-color: #f9f9f9;
-        }
-        .manifesto-section h2 {
-            color: #b30000;
-            font-size: 1.8em;
-        }
-        .manifesto-text {
-            font-size: 17px;
-            color: #444;
-        }
-        .manifesto-text strong {
-            color: #b30000; /* Making the specified sentences red */
-        }
-        .tldr {
-            font-size: 17px;
-            background: #f4f4f4;
-            padding: 15px;
-            border-left: 4px solid #b30000;
-        }
-        .manifesto-link, .linkedin-link, .email-link {
-            color: #b30000;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .manifesto-link:hover, .linkedin-link:hover, .email-link:hover {
-            text-decoration: underline;
-        }
-        .signature {
-            margin-top: 40px;
-            font-style: italic;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #333;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto 20px;
-            width: 500px; /* Adjusted size for better visibility */
-            height: auto;
-        }
-        .links {
-            margin-top: 30px;
-            text-align: left;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curiosity Education</title>
+
+  <!-- Import Pinyon Script font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" 
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Overall layout */
+    body {
+      font-family: "Raleway", sans-serif;
+      background-color: #fff;
+      color: #333;
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 40px;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    /* Header for logo + date */
+    .header {
+      position: relative;
+      min-height: 60px;
+      margin-bottom: 30px;
+    }
+
+    /* Bigger logo, top-left corner */
+    .ce-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px; /* Adjust as needed */
+      height: auto;
+    }
+
+    /* Date in the top-right corner */
+    .date {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    /* TL;DR box near the top */
+    .tldr {
+      font-size: 17px;
+      background: #f4f4f4;
+      padding: 15px;
+      margin: 70px 0 30px;
+    }
+
+    /* Main content */
+    .content {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .content p {
+      margin-bottom: 1em;
+    }
+
+    /* Links */
+    .manifesto-link, .linkedin-link, .email-link {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .manifesto-link:hover, .linkedin-link:hover, .email-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Signature styling */
+    .signature {
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    /* Calligraphy-style font for names */
+    .signature-names {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 1.5em;  /* Larger for a handwritten signature effect */
+      line-height: 1.2;  /* Closer lines for a more authentic signature look */
+      margin: 0;
+    }
+
+    .links {
+      margin-top: 100px;
+    }
+  </style>
 </head>
 <body>
-    <img src="textblack.png" alt="Curiosity Education Logo" class="logo"> <!-- Updated logo -->
-    
-    <div class="letter">
-        <p>Hi there!</p>
+  <!-- Header: logo on left, date on right -->
+  <div class="header">
+    <img src="textblack.png" alt="Curiosity Education Logo" class="ce-logo">
+    <div class="date">December 6, 2024</div>
+  </div>
 
-        <p>Thanks for stopping by. We're currently working on some exciting things behind the scenes, and our website is still a work in progress. But while we're busy putting everything together, we'd love to share our vision!</p>
+  <!-- TL;DR at the top -->
+  <div id="tldr" class="tldr">
+    <strong>🚀 TL;DR:</strong> We believe education should foster curiosity, not stifle it. Our goal is to build an interactive, AI-driven learning experience that teaches through discovery, not rote memorization.
+  </div>
 
-        <p>In a hurry? <strong><a href="#tldr" class="manifesto-link">Scroll down for a TL;DR.</a></strong></p>
+  <!-- Main content -->
+  <div class="content">
+   
+    <p><strong>Humanity’s progress has stemmed from one thing: Curiosity.</strong><br><br>
+       From deploying the internet to sending rovers to Mars—every innovation (even the accidental microwave!) has only ever existed because its creator was naturally curious about something. Curiosity pushes us to naturally ask questions, explore, and challenge the boundaries of what we know.</p>
 
-        <div class="manifesto-section">
-            <h2>Our Mission</h2>
-            <p class="manifesto-text">
-                <strong>Humanity’s progress has stemmed from one thing: Curiosity.</strong> <br><br>
-                From deploying the internet to sending rovers to Mars—every innovation (even the accidental microwave!) has only ever existed because its creator was naturally curious about something. Curiosity pushes us to naturally ask questions, explore, and challenge the boundaries of what we know.<br><br>
-                Yet, this same curiosity often withers within the confines of modern education. <br><br>
-                The challenge lies in how learning has been reduced to a transactional activity. Students are taught to study for tests, not to explore the deeper meaning behind what they’re learning. As a result, our education system often values rote memorization over genuine understanding, compliance over curiosity, and short-term achievements over long-term intellectual growth.<br><br>
-                Our mission is to change that by introducing a new model of education—one suited for the 21st century. A model that teaches problem-solving and intuition, not just formulas, and is uniquely suited to scale with the emerging capabilities driven by the AI revolution.<br><br>
-                The end goal? <strong>An interactive, dynamic course experience—designed for the 21st century.</strong><br><br>
-                In this model, we envision a course that is generated on-the-fly from a single prompt, and is structured where you’re learning by doing – no videos, textbooks, or lectures; everything is interactive. The content is structured as an experience of guided discovery, designed to improve your ability to think and reason from first principles, and really learn a subject. Since the content is generated in real-time for you, you gain the ability to explore any topic at your own pace without having to adhere to a pre-defined curriculum, all with the content fundamentally engineered to foster your curiosity for the subject.<br><br>
-                So that’s our end goal, but we still have a lot of work to do! As such, we’re excited to embark on this journey of, well… curiosity!<br><br>
-                We hope you’re as excited as we are!
-            </p>
-        </div>
+    <p>Yet, this same curiosity often withers within the confines of modern education.</p>
 
-        <p class="signature">–The Curiosity Education Team</p>
+    <p>The challenge lies in how learning has been reduced to a transactional activity. Students are taught to study for tests, not to explore the deeper meaning behind what they’re learning. As a result, our education system often values rote memorization over genuine understanding, compliance over curiosity, and short-term achievements over long-term intellectual growth.</p>
 
-        <p><strong>Advaith V.</strong><br>
-           <strong>Shlok R.</strong> 
-           <strong>Vishal Y.</strong> </p>
+    <p>Our mission is to change that by introducing a new model of education—one suited for the 21st century. A model that teaches problem-solving and intuition, not just formulas, and is uniquely suited to scale with the emerging capabilities driven by the AI revolution.</p>
 
-        <div id="tldr" class="tldr">
-            <strong>TL;DR:</strong> We believe education should foster curiosity, not stifle it. Our goal is to build an interactive, AI-driven learning experience that teaches through discovery, not rote memorization.
-        </div>
+    <p>The end goal? <strong>An interactive, dynamic course experience—designed for the 21st century.</strong></p>
 
-        <div class="links">
-            <p><a href="https://docs.google.com/document/d/1agvnLe0dD8wDqHdlyIPjqCoD_PP5oLBda7ixQpgTk6g/edit?" class="manifesto-link">📜 Read our full manifesto</a></p>
-            <p><a href="https://www.linkedin.com" class="linkedin-link">🔗 Connect with us on LinkedIn</a></p>
-            <p><a href="mailto:team@curiosity-edu.org" class="email-link">📧 Contact us at team@curiosity-edu.org</a></p>
-        </div>
+    <p>In this model, we envision a course that is generated on-the-fly from a single prompt, and is structured where you’re learning by doing – no videos, textbooks, or lectures; everything is interactive. The content is structured as an experience of guided discovery, designed to improve your ability to think and reason from first principles, and really learn a subject. Since the content is generated in real-time for you, you gain the ability to explore any topic at your own pace without having to adhere to a pre-defined curriculum, all with the content fundamentally engineered to foster your curiosity for the subject.</p>
+
+    <p>So that’s our end goal, but we still have a lot of work to do! As such, we’re excited to embark on this journey of, well… curiosity!</p>
+
+    <p>We hope you’re as excited as we are!</p>
+
+    <p class="signature">–The Curiosity Education Team</p>
+
+    <!-- Names in Pinyon Script calligraphy style -->
+    <p class="signature-names">
+      Advaith V.<br>
+      Shlok R.<br>
+      Vishal Y.
+    </p>
+
+    <!-- Links to manifesto, LinkedIn, and email -->
+    <div class="links">
+      <p><a href="https://docs.google.com/document/d/1agvnLe0dD8wDqHdlyIPjqCoD_PP5oLBda7ixQpgTk6g/edit?" class="manifesto-link">🚀 Read our full manifesto</a></p>
+      <p><a href="https://www.linkedin.com" class="linkedin-link">🔗 Connect with us on LinkedIn</a></p>
+      <p><a href="mailto:team@curiosity-edu.org" class="email-link">📧 Contact us at team@curiosity-edu.org</a></p>
     </div>
+  </div>
 </body>
 </html>
