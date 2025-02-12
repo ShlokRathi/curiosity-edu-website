@@ -7,74 +7,56 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #fff;
             text-align: center;
             padding: 50px;
-            margin: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
         }
         h1 {
-            color: #d32f2f;
-            font-size: 3em;
-            margin-bottom: 20px;
+            color: #b30000; /* Deep red */
+            font-size: 2.5em;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 15px;
         }
-        h1 img {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
+        .logo {
+            width: 80px; /* Adjust as needed */
+            height: auto;
         }
         p {
             font-size: 18px;
             color: #555;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #d32f2f;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact {
-            margin-top: 30px;
-            font-size: 20px;
-            color: #d32f2f;
         }
         .manifesto-link {
-            color: #d32f2f;
+            color: #b30000;
+            font-weight: bold;
             text-decoration: none;
         }
         .manifesto-link:hover {
             text-decoration: underline;
         }
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1><img src="Asset 7@3x.png" alt="Curiosity Education Logo"> Welcome to Curiosity Education!</h1>
-        <p>Hi there! Thanks for stopping by. We're currently working on some exciting things behind the scenes, and our website is still a work in progress. But while we're busy putting everything together, we wanted to share our manifesto with you—our vision and what we're all about.</p>
+    <div class="container">
+        <h1>
+            <img src="logo.png" alt="Curiosity Education Logo" class="logo">
+            Curiosity Education
+        </h1>
+        <p>Hi there! Thanks for stopping by. We're currently working on some exciting things behind the scenes, and our website is still a work in progress. But while we're busy putting everything together, we wanted to share <a href="https://docs.google.com/document/d/1agvnLe0dD8wDqHdlyIPjqCoD_PP5oLBda7ixQpgTk6g/edit?" class="manifesto-link">our manifesto</a> with you—our vision and what we're all about.</p>
         <p>We believe in teaching through intuition, creating dynamic, hands-on learning experiences that make complex ideas easy to grasp and fun to explore. It's not just about memorizing facts—it's about understanding, discovering, and growing.</p>
         <p>Stay tuned, we can't wait to share more with you soon!</p>
-        <p>Feel free to reach out if you have any questions or just want to say hi. We're excited to have you along on this journey with us!</p>
-
-        <div class="contact">
-            <p>Interested in reaching out? You can email us at <a href="mailto:team@curiosity-edu.org">team@curiosity-edu.org</a></p>
-        </div>
-
-        <p>Check out <a class="manifesto-link" href="https://docs.google.com/document/d/1agvnLe0dD8wDqHdlyIPjqCoD_PP5oLBda7ixQpgTk6g/edit?usp=sharing" target="_blank">our manifesto</a> to learn more!</p>
+        <p class="contact">Have questions? Reach out at <strong>team@curiosity-edu.org</strong></p>
     </div>
 </body>
 </html>
